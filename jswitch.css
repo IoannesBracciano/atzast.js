@@ -1,0 +1,61 @@
+input.jswitch {
+	display: none;
+}
+
+input.jswitch + label {
+	padding-left: 20px;
+	height: 21px;
+	display: inline-block;
+	line-height: 20px;
+}
+
+input.jswitch + label::before {
+	content: ' ';
+	width: 17px;
+	height: 17px;
+	border-radius: 100px;
+
+	position: absolute;
+	top: 12px;
+	left: 2px;
+	z-index: 1;
+
+	background: #e5e5e5; /* Old browsers */
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #f7f7f7 0%, #e5e5e5 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #f7f7f7 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #f7f7f7 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	transition: all .2s ease-out;
+}
+
+input.jswitch + label::after {
+	content: attr(data-content);
+	position: absolute;
+	background: #cfcfcf;
+	top: 10px;
+	left: 0;
+	height: 100%;
+	width: 72px;
+	box-sizing: border-box;
+	padding-left: 23px;
+	padding-right: 9px;
+	border-radius: 100px;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,.2);
+
+	color:#999;
+	font-size: 18px;
+
+	transition: all .1s ease-out;
+}
+
+input.jswitch:checked + label::before {
+	left: 53px;
+}
+
+input.jswitch:checked + label::after {
+	background: #838dff;
+	color: #f9f9f9;
+	padding-left: 8px;
+}

@@ -1,0 +1,50 @@
+.jslider {
+	width: 200px;
+	height: 4px;
+	overflow: visible;
+
+	position: relative;
+	margin: 0 auto 30px auto;
+
+	background-color: #999;
+	border-radius: 4px;
+
+	color: #838dff;
+}
+
+.jslider > label {
+	width: 75px;
+
+	position: absolute;
+	top: -20px;
+	left: -85px;
+
+	text-align: right;
+}
+
+.jslider .handle {
+	width: 16px;
+	height: 16px;
+	border-radius: 100px;
+
+	position: absolute;
+	top: -7px;
+	left: 0px;
+
+	background: #e5e5e5; /* Old browsers */
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #f7f7f7 0%, #e5e5e5 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #f7f7f7 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #f7f7f7 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border: 1px solid #999990;
+	box-shadow: 0 0 2px #aaa;
+}
+
+.jslider .add-on {
+	width: 75px;
+
+	position: absolute;
+	top: -20px;
+	right: -85px;
+}
